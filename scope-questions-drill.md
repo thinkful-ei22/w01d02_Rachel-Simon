@@ -11,4 +11,7 @@ Since global variables can be accessed anywhere, unexpected bugs might occur whe
 
 
 Explain JavaScript's strict mode
+
+It is best practice to always use strict mode, as you will then be unable to use implicitly declared variables. This keeps your code determinate and makes it easier to avoid errors, and easier to debug.
+
 What are side effects, and what is a pure function?
