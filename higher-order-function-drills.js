@@ -1,31 +1,22 @@
 'use strict';
 
-// // function repeat(fn,n) {
-// //     //loop repeat n times 
-// //     for (i = 0; i < n; i++) { // 
-// //     //for each iteration, call fn
-// //         fn();
-// //     }
- 
-// // }
-
-// function repeat(fn,n) {
-//     let i = 0;
-//     while (i < n) {
-//         fn; 
-//         i++;
+// const repeat = function(fn,n) {
+//     //loop repeat n times 
+//     for (var i = 0; i < n; i++) { // 
+//     //for each iteration, call fn
+//         fn();
 //     }
 // }
 
-// function hello() {
+// const hello = function() {
 //     console.log("Hello world");
 // }
 
-// function goodbye() {
+// const goodbye = function() {
 //     console.log("Goodbye world");
 // }
 
-// repeat(hello(), 5);
+// repeat(hello, 5);
 
 
 // -----------------------------------------------
@@ -104,20 +95,20 @@
 
 //-----------------------------------------------
 
-function reduceArray(string) {
-    let newArray = string.split(' ');
-    let counter = [];
-    for (var i = 0; i < newArray.length; i++) {
-        if (newArray[i].length === 3) {
-            counter.push(" ");
-        } else { 
-            counter.push(newArray[i][newArray[i].length - 1])
-        }
-    }
-    return counter.join('').toUpperCase();
-}
+// function reduceArray(string) {
+//     let newArray = string.split(' ');
+//     let counter = [];
+//     for (var i = 0; i < newArray.length; i++) {
+//         if (newArray[i].length === 3) {
+//             counter.push(" ");
+//         } else { 
+//             counter.push(newArray[i][newArray[i].length - 1])
+//         }
+//     }
+//     return counter.reduce((a, b) => a + b).toUpperCase();
+// }
 
-console.log(reduceArray('noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest'));
+// console.log(reduceArray('noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest'));
     
     
     
