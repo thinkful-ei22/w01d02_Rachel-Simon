@@ -102,8 +102,28 @@
 
 // console.log(turtleStep([[0, 1], [0, -5], [-1, -3], [3, 7]]));
 
------------------------------------------------
+//-----------------------------------------------
 
+function reduceArray(string) {
+    let newArray = string.split(' ');
+    let counter = [];
+    for (var i = 0; i < newArray.length; i++) {
+        if (newArray[i].length === 3) {
+            counter.push(" ");
+        } else { 
+            counter.push(newArray[i][newArray[i].length - 1])
+        }
+    }
+    return counter.join('').toUpperCase();
+}
+
+console.log(reduceArray('noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest'));
+    
+    
+    
+    
+    
+  
 
 
 
