@@ -14,4 +14,9 @@ Explain JavaScript's strict mode
 
 It is best practice to always use strict mode, as you will then be unable to use implicitly declared variables. This keeps your code determinate and makes it easier to avoid errors, and easier to debug.
 
+
+
 What are side effects, and what is a pure function?
+
+Unwanted outcomes in conflicting code, that often come up as a result from bad practices, like declaring many global variables. A pure function is a function without side effects, and is only affected by determinate code.
+
