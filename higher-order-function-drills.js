@@ -81,21 +81,28 @@
 
 //  -----------------------------------------------
 
-function turtleSteps(arr) {
-	let newArray = [];
-	for (let i = 0; i < arr.length; i++) {
-		newArray.push(arr[i].filter(a => a >= 0));
-	}
-	return newArray;
-}
+// function turtleSteps(arr) {
+// 	let newArray = [];
+// 	for (let i = 0; i < arr.length; i++) {
+// 		newArray.push(arr[i].filter(a => a >= 0));
+// 	}
+// 	return newArray;
+// }
 
-function turtleSteps(arr) {
-	let newArray = [];
-}
+// function turtleStep(arr) {
+// 	var filterArray = [];
+// 	for (let i = 0; i < arr.length; i++) {
+// 		if (arr[i][0] >= 0 && arr[i][1] >= 0) {
+// 			filterArray.push(arr[i]);
+// 		}
+// 	}
+// 	var mapArray = filterArray.map(a => a.reduce((b, c) => b + c));
+// 	mapArray.forEach(d => console.log(d));
+// }
 
-turtleSteps([[0, 1], [0, -5], [-1, -3]]);
+// console.log(turtleStep([[0, 1], [0, -5], [-1, -3], [3, 7]]));
 
-
+-----------------------------------------------
 
 
 
