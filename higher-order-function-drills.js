@@ -1,20 +1,20 @@
-'use strict';
+// 'use strict';
 
-// const repeat = function(fn,n) {
-//     //loop repeat n times 
-//     for (var i = 0; i < n; i++) { // 
+// function repeat(fn,n) {
+//   //loop repeat n times 
+//   for (var i = 0; i < n; i++) { // 
 //     //for each iteration, call fn
-//         fn();
-//     }
-// }
+//     fn();
+//   }
+// };
 
 // const hello = function() {
-//     console.log("Hello world");
-// }
+//   console.log('Hello world');
+// };
 
 // const goodbye = function() {
-//     console.log("Goodbye world");
-// }
+//   console.log('Goodbye world');
+// };
 
 // repeat(hello, 5);
 
@@ -27,8 +27,8 @@
 // const myNames = ['Rich', 'Joe', 'Bhaumik', 'Ray'];
 
 // const filteredNames = filter(myNames, function(name) {
-//     // This is a "predicate function" - it's a function that only returns a boolean
-//     return name[0] === 'R';
+//   // This is a "predicate function" - it's a function that only returns a boolean
+//   return name[0] === 'R';
 // });
 
 // console.log(filteredNames) // => ['Rich', 'Ray']
@@ -38,28 +38,27 @@
 
 
 // function filter(arr, fn) {
-// 	let newArray = [];
-// 	for (var i = 0; i < arr.length; i++) {
-// 		if (fn(arr[i])) {
-// 			newArray.push(arr[i] === true);
-// 		}
-// 	}
-// 	return newArray;
+//   const newArray = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (fn(arr[i])) {
+//       newArray.push(arr[i]);
+//     }
+//   }
+//   return newArray;
 // }
-
-// console.log(filter(myNames, filter));
 
 
 // -----------------------------------------------
  
+ 
 // function hazardWarningCreator(typeOfWarning) {
-//     let warningCounter = 0;
+//   let warningCounter = 0;
 
-//     return function(location) {
-//         warningCounter++;
-//         console.log(`DANGER! There is a ${typeOfWarning} hazard at ${location}!`);
-//         console.log(`The ${typeOfWarning} hazard alert has triggered ${warningCounter} time(s) today!`)
-//     }
+//   return function(location) {
+//     warningCounter++;
+//     console.log(`DANGER! There is a ${typeOfWarning} hazard at ${location}!`);
+//     console.log(`The ${typeOfWarning} hazard alert has triggered ${warningCounter} time(s) today!`)
+//   }
 
 // }
 
@@ -70,16 +69,11 @@
 // deerAhead("Canada");
 // deerAhead("Canada");
 
+
 //  -----------------------------------------------
 
-// function turtleSteps(arr) {
-// 	let newArray = [];
-// 	for (let i = 0; i < arr.length; i++) {
-// 		newArray.push(arr[i].filter(a => a >= 0));
-// 	}
-// 	return newArray;
-// }
 
+// //previous solution:
 // function turtleStep(arr) {
 // 	var filterArray = [];
 // 	for (let i = 0; i < arr.length; i++) {
@@ -93,19 +87,32 @@
 
 // console.log(turtleStep([[0, 1], [0, -5], [-1, -3], [3, 7]]));
 
-//-----------------------------------------------
+
+// //new solution:
+// function turtleStep(arr) {
+//   const frArray = arr.filter(el => el[0] >= 0 && el[1] >= 0);
+//   const mapArray = frArray.map(el => el[0] + el[1]);
+//   mapArray.forEach(el => console.log(el));
+// }
+
+
+// turtleStep([[0, 1], [0, -5], [-1, -3], [3, 7]]);
+
+
+// -----------------------------------------------
+
 
 // function reduceArray(string) {
-//     let newArray = string.split(' ');
-//     let counter = [];
-//     for (var i = 0; i < newArray.length; i++) {
-//         if (newArray[i].length === 3) {
-//             counter.push(" ");
-//         } else { 
-//             counter.push(newArray[i][newArray[i].length - 1])
-//         }
+//   let newArray = string.split(' ');
+//   let counter = [];
+//   for (var i = 0; i < newArray.length; i++) {
+//     if (newArray[i].length === 3) {
+//       counter.push(" ");
+//     } else { 
+//       counter.push(newArray[i][newArray[i].length - 1])
 //     }
-//     return counter.reduce((a, b) => a + b).toUpperCase();
+//   }
+//   return counter.reduce((a, b) => a + b).toUpperCase();
 // }
 
 // console.log(reduceArray('noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest'));
