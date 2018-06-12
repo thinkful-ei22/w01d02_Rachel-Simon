@@ -61,21 +61,45 @@
 
 // -----------------------------------------------
  
-function hazardWarningCreator(typeOfWarning) {
-    let warningCounter = 0;
+// function hazardWarningCreator(typeOfWarning) {
+//     let warningCounter = 0;
 
-    return function(location) {
-        warningCounter++;
-        console.log(`DANGER! There is a ${typeOfWarning} hazard at ${location}!`);
-        console.log(`The ${typeOfWarning} hazard alert has triggered ${warningCounter} time(s) today!`)
-    }
+//     return function(location) {
+//         warningCounter++;
+//         console.log(`DANGER! There is a ${typeOfWarning} hazard at ${location}!`);
+//         console.log(`The ${typeOfWarning} hazard alert has triggered ${warningCounter} time(s) today!`)
+//     }
 
+// }
+
+// const rocksWarning = hazardWarningCreator('Rocks on the Road');
+// const deerAhead = hazardWarningCreator('Look out for deer');
+// const hairpinTurn = hazardWarningCreator('Drive slow, turns ahead'); 
+
+// deerAhead("Canada");
+// deerAhead("Canada");
+
+//  -----------------------------------------------
+
+function turtleSteps(arr) {
+	let newArray = [];
+	for (let i = 0; i < arr.length; i++) {
+		newArray.push(arr[i].filter(a => a >= 0));
+	}
+	return newArray;
 }
-    const rocksWarning = hazardWarningCreator('Rocks on the Road');
-    const deerAhead = hazardWarningCreator('Look out for deer');
-    const hairpinTurn = hazardWarningCreator('Drive slow, turns ahead'); 
 
-deerAhead("Canada");
-deerAhead("Canada");
+function turtleSteps(arr) {
+	let newArray = [];
+}
 
- -----------------------------------------------
+turtleSteps([[0, 1], [0, -5], [-1, -3]]);
+
+
+
+
+
+
+
+
+
