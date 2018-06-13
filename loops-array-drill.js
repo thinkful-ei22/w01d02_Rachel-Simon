@@ -1,3 +1,5 @@
+'use strict';
+
 function max(numbers) {
   let i = 0;
   let currentMax = numbers[0];
